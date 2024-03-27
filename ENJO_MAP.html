@@ -64583,40 +64583,38 @@
                                                                             </div>
                                                                             <div class="YMEQtf">
                                                                                 <div style="height: 100%;" jscontroller="nToyvd" data-code="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+                                                                                <html>
 
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Experimental Network Joint Open-source Map&lt;/title&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1,maximum-scale=1,user-scalable=no&quot;&gt;
-    &lt;!-- Import Github Fork Ribbon CSS --&gt;
-    &lt;link rel=&quot;stylesheet&quot;
-        href=&quot;https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css&quot; /&gt;
-    &lt;!-- Import Mapbox GL JS  --&gt;
-    &lt;link href=&quot;https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css&quot; rel=&quot;stylesheet&quot;&gt;
-    &lt;script src=&quot;https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js&quot;&gt;&lt;/script&gt;
-    &lt;!-- Mapbox botton style --&gt;
-    &lt;link href=&quot;https://www.mapbox.com/base/latest/base.css&quot; rel=&quot;stylesheet&quot;&gt;
-    &lt;!-- Export map --&gt;
-    &lt;link href=&#39;https://watergis.github.io/mapbox-gl-export/mapbox-gl-export.css&#39; rel=&#39;stylesheet&#39; /&gt;
-    &lt;script src=&quot;https://watergis.github.io/mapbox-gl-export/mapbox-gl-export.js&quot;&gt;&lt;/script&gt;
-    &lt;!-- Real time traffic --&gt;
-    &lt;link href=&#39;mapbox-gl-traffic.css&#39; rel=&#39;stylesheet&#39; /&gt;
-    &lt;script src=&#39;mapbox-gl-traffic.js&#39;&gt;&lt;/script&gt;
-    &lt;!-- Drawing Related Mapbox draw, turf --&gt;
-    &lt;script src=&quot;https://unpkg.com/@turf/turf@6/turf.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.4.3/mapbox-gl-draw.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.4.3/mapbox-gl-draw.css&quot;
-        type=&quot;text/css&quot;&gt;
-    &lt;!-- For $ function --&gt;
-    &lt;script src=&#39;https://code.jquery.com/jquery-1.8.2.js&#39;&gt;&lt;/script&gt;
-    &lt;style&gt;
+<head>
+    <meta charset="utf-8">
+    <title>Experimental Network Joint Open-source Map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- Import Github Fork Ribbon CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <!-- Import Mapbox GL JS  -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    <!-- Mapbox botton style -->
+    <link href="https://www.mapbox.com/base/latest/base.css" rel="stylesheet">
+    <!-- Export map -->
+    <link href='https://watergis.github.io/mapbox-gl-export/mapbox-gl-export.css' rel='stylesheet' />
+    <script src="https://watergis.github.io/mapbox-gl-export/mapbox-gl-export.js"></script>
+    <!-- Real time traffic -->
+    <link href='mapbox-gl-traffic.css' rel='stylesheet' />
+    <script src='mapbox-gl-traffic.js'></script>
+    <!-- Drawing Related Mapbox draw, turf -->
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.4.3/mapbox-gl-draw.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.4.3/mapbox-gl-draw.css"
+        type="text/css">
+    <!-- For $ function -->
+    <script src='https://code.jquery.com/jquery-1.8.2.js'></script>
+    <style>
         body {
             width: 100vw;
             height: 100vh;
             margin: 0;
-            /* margin: 0;
-                padding: 0; */
         }
 
         #map {
@@ -64625,7 +64623,6 @@
             left: 0px;
             right: 0px;
             bottom: 0px;
-            /* width: 100%; */
         }
 
         .Condition-container {
@@ -64728,15 +64725,15 @@
         .github-fork-ribbon:before {
             background-color: #ff0000;
         }
-    &lt;/style&gt;
-&lt;/head&gt;
+    </style>
+</head>
 
-&lt;body&gt;
+<body>
 
-    &lt;!-- Drawing Related style--&gt;
-    &lt;style&gt;
+    <!-- Drawing Related style-->
+    <style>
         .calculation-box {
-            height: 80px;
+            height: 100px;
             width: 180px;
             position: absolute;
             bottom: 70px;
@@ -64752,23 +64749,22 @@
         }
 
         p {
-            font-family: &#39;Open Sans&#39;;
+            font-family: 'Open Sans';
             margin: 0;
             font-size: 12px;
         }
-    &lt;/style&gt;
-    &lt;!-- Switch style box --&gt;
-    &lt;style&gt;
+    </style>
+    <!-- Switch style box -->
+    <style>
         #menu {
             position: absolute;
             top: 0%;
-            /* Width: 100%; */
             right: 50px;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 5px;
             border: 1px solid rgba(0, 0, 0, 0.4);
             text-align: center;
-            font-family: &#39;Open Sans&#39;, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             z-index: 99;
         }
 
@@ -64781,7 +64777,7 @@
             border-radius: 3px;
             width: 130px;
             border: 1px solid rgba(0, 0, 0, 0.4);
-            font-family: &#39;Open Sans&#39;, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             cursor: pointer;
         }
 
@@ -64825,7 +64821,7 @@
             border-radius: 3px;
             width: 130px;
             border: 1px solid rgba(0, 0, 0, 0.4);
-            font-family: &#39;Open Sans&#39;, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             cursor: pointer;
         }
 
@@ -64858,104 +64854,100 @@
         #menu3 layerswitch3.active:hover {
             background: #3074a4;
         }
-    &lt;/style&gt;
+    </style>
 
-    &lt;!-- Fork Me Github --&gt;
-    &lt;div id=ribbon&gt;
-    &lt;a class=&quot;github-fork-ribbon right-bottom&quot; href=&quot;https://github.com/WNKK256/ENJO_MAP&quot; data-ribbon=&quot;Fork me on GitHub&quot;
-        title=&quot;Fork me on GitHub&quot;&gt;Fork me on GitHub&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;!-- Create a container for the map --&gt;
-    &lt;div id=&quot;map&quot;&gt;
-        &lt;div href=&quot;#&quot; id=&quot;condition_box&quot; class=&quot;Condition-container&quot;&gt;LOADING...&lt;/div&gt;
-        &lt;div href=&quot;#&quot; id=&quot;settingonoff&quot; class=&quot;Setting-container&quot;&gt;Show Setting&lt;/div&gt;
-        &lt;div href=&quot;#&quot; id=&quot;lightingonoff&quot; class=&quot;Light-container&quot;&gt;Intensed Lighting&lt;/div&gt;
-        &lt;div href=&quot;#&quot; id=&quot;j2gmap&quot; class=&quot;jump2googlemap&quot;&gt;Go To Google Map&lt;/div&gt;
-        &lt;div href=&quot;#&quot; id=&quot;j2geoinfomap&quot; class=&quot;jump2geoinfomap&quot;&gt;Go To Geoinfo Map&lt;/div&gt;
-        &lt;div href=&quot;#&quot; id=&#39;gmap2mb&#39; class=&#39;googlemap2mb&#39;&gt;Jump to Google map location:
-            &lt;input type=&quot;text&quot; id=&quot;gmap2mb_input&quot; name=&quot;GoogleLinktext&quot; placeholder=&quot;Place Google Map URL&quot;&gt;
-        &lt;/div&gt;
-        &lt;div id=&quot;menu&quot;&gt;
-            &lt;input id=&quot;wnkk/clqw4ldj9011a01nw9h9e5dk2&quot; type=&quot;radio&quot; name=&quot;rtoggle&quot; value=&quot;ENJO-Map&quot; checked=&quot;checked&quot;&gt;
-            &lt;label for=&quot;wnkk/clqw4ldj9011a01nw9h9e5dk2&quot;&gt;ENJO-MAP&lt;/label&gt;
-            &lt;!-- See a list of Mapbox-hosted public styles at --&gt;
-            &lt;!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles --&gt;
-            &lt;input id=&quot;mapbox/satellite-streets-v12&quot; type=&quot;radio&quot; name=&quot;rtoggle&quot; value=&quot;satellite&quot;&gt;
-            &lt;label for=&quot;mapbox/satellite-streets-v12&quot;&gt;satellite streets&lt;/label&gt;
-            &lt;input id=&quot;mapbox/light-v11&quot; type=&quot;radio&quot; name=&quot;rtoggle&quot; value=&quot;light&quot;&gt;
-            &lt;label for=&quot;mapbox/light-v11&quot;&gt;light&lt;/label&gt;
-            &lt;input id=&quot;mapbox/dark-v11&quot; type=&quot;radio&quot; name=&quot;rtoggle&quot; value=&quot;dark&quot;&gt;
-            &lt;label for=&quot;mapbox/dark-v11&quot;&gt;dark&lt;/label&gt;
-            &lt;input id=&quot;mapbox/streets-v12&quot; type=&quot;radio&quot; name=&quot;rtoggle&quot; value=&quot;streets&quot;&gt;
-            &lt;label for=&quot;mapbox/streets-v12&quot;&gt;streets&lt;/label&gt;
-            &lt;input id=&quot;mapbox/outdoors-v12&quot; type=&quot;radio&quot; name=&quot;rtoggle&quot; value=&quot;outdoors&quot;&gt;
-            &lt;label for=&quot;mapbox/outdoors-v12&quot;&gt;outdoors&lt;/label&gt;
-        &lt;/div&gt;
-        &lt;!-- Drawing Related --&gt;
-        &lt;div id=calculation-box_group class=&quot;calculation-box&quot;&gt;
-            &lt;p&gt;Distance &amp; Area of all Drawing.&lt;/p&gt;
-            &lt;div id=&quot;calculated-area-distance&quot;&gt;&lt;/div&gt;
-            &lt;div href=&quot;#&quot; id=&quot;reset&quot; class=&quot;reset-container&quot;&gt;Reset&lt;/div&gt;
-        &lt;/div&gt;
+    <!-- Fork Me Github -->
+    <div id=ribbon>
+        <a class="github-fork-ribbon right-bottom" href="https://github.com/WNKK256/ENJO_MAP"
+            data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    </div>
+    <!-- Create a container for the map -->
+    <div id="map">
+        <div href="#" id="condition_box" class="Condition-container">LOADING...</div>
+        <div href="#" id="settingonoff" class="Setting-container">Show Setting</div>
+        <div href="#" id="lightingonoff" class="Light-container">Intensed Lighting</div>
+        <div href="#" id="j2gmap" class="jump2googlemap">Go To Google Map</div>
+        <div href="#" id="j2geoinfomap" class="jump2geoinfomap">Go To Geoinfo Map</div>
+        <div href="#" id='gmap2mb' class='googlemap2mb'>Jump to Google map location:
+            <input type="text" id="gmap2mb_input" name="GoogleLinktext" placeholder="Place Google Map URL">
+        </div>
+        <div id="menu">
+            <input id="wnkk/clqw4ldj9011a01nw9h9e5dk2" type="radio" name="rtoggle" value="ENJO-Map" checked="checked">
+            <label for="wnkk/clqw4ldj9011a01nw9h9e5dk2">ENJO-MAP</label>
+            <!-- See a list of Mapbox-hosted public styles at -->
+            <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
+            <input id="mapbox/satellite-streets-v12" type="radio" name="rtoggle" value="satellite">
+            <label for="mapbox/satellite-streets-v12">satellite streets</label>
+            <input id="mapbox/light-v11" type="radio" name="rtoggle" value="light">
+            <label for="mapbox/light-v11">light</label>
+            <input id="mapbox/dark-v11" type="radio" name="rtoggle" value="dark">
+            <label for="mapbox/dark-v11">dark</label>
+            <input id="mapbox/streets-v12" type="radio" name="rtoggle" value="streets">
+            <label for="mapbox/streets-v12">streets</label>
+            <input id="mapbox/outdoors-v12" type="radio" name="rtoggle" value="outdoors">
+            <label for="mapbox/outdoors-v12">outdoors</label>
+        </div>
+        <!-- Drawing Related -->
+        <div id='calculation-box_group' class="calculation-box">
+            <p>Distance & Area of all Drawing.</p>
+            <div id="calculated-area-distance"></div>
+            <div href="#" id="reset" class="reset-container">Reset</div>
+        </div>
 
-        &lt;!-- layer on off --&gt;
-        &lt;nav id=&quot;menu2&quot;&gt;&lt;/nav&gt;
-        &lt;nav id=&quot;menu3&quot;&gt;&lt;/nav&gt;
-        
-    &lt;/div&gt;
+        <!-- layer on off -->
+        <nav id="menu2"></nav>
+        <nav id="menu3"></nav>
 
-    
-    &lt;script&gt;
+    </div>
+
+    <script>
         // Add your Mapbox access token
-        mapboxgl.accessToken = &#39;pk.eyJ1Ijoid25rayIsImEiOiJjbGlkemh1cHcwaDFrM2xxZjBoaHpiOHE2In0.T6oRN-g_-BlLaYFTpSjGQQ&#39;;
+        mapboxgl.accessToken = 'pk.eyJ1Ijoid25rayIsImEiOiJjbGlkemh1cHcwaDFrM2xxZjBoaHpiOHE2In0.T6oRN-g_-BlLaYFTpSjGQQ';
 
         const map = new mapboxgl.Map({
-            container: &#39;map&#39;,
-            style: &#39;mapbox://styles/wnkk/clqw4ldj9011a01nw9h9e5dk2&#39;,
+            container: 'map',
+            style: 'mapbox://styles/wnkk/clqw4ldj9011a01nw9h9e5dk2',
             center: [114.1876892, 22.3852151],
             zoom: 18.5,
             hash: true,
             maxZoom: 24,
-            worldview: &#39;JP&#39;,
-            // pitch: 30
+            worldview: 'JP',
         });
 
-        const layerList = document.getElementById(&#39;menu&#39;);
-        const inputs = layerList.getElementsByTagName(&#39;input&#39;);
+        const layerList = document.getElementById('menu');
+        const inputs = layerList.getElementsByTagName('input');
 
         for (const input of inputs) {
-            input.onclick = (layer) =&gt; {
+            input.onclick = (layer) => {
                 const layerId = layer.target.id;
                 const layervalue = layer.target.value;
-                map.setStyle(&#39;mapbox://styles/&#39; + layerId);
+                map.setStyle('mapbox://styles/' + layerId);
 
-                var element = document.getElementById(&quot;menu2&quot;);
+                var element = document.getElementById("menu2");
                 element.replaceChildren();
-                element = document.getElementById(&quot;menu3&quot;);
+                element = document.getElementById("menu3");
                 element.replaceChildren();
-                if (layervalue === &#39;ENJO-Map&#39;) {
-                    map.once(&#39;style.load&#39;, () =&gt; {
-                        // console.log(&#39;A style load event occurred.&#39;);
-                        LayerOptions(&#39;on&#39;, &#39;on&#39;);
+                if (layervalue === 'ENJO-Map') {
+                    map.once('style.load', () => {
+                        LayerOptions('on', 'on');
                     });
-
                 } else {
-                    LayerOptions(&#39;off&#39;, &#39;on&#39;);
+                    LayerOptions('off', 'on');
                 }
             };
         }
 
 
         // Reset Botton
-        document.getElementById(&#39;reset&#39;).onclick = clearMap;
+        document.getElementById('reset').onclick = clearMap;
         // Jump2googlemap
-        document.getElementById(&#39;j2gmap&#39;).onclick = j2gmap_link;
+        document.getElementById('j2gmap').onclick = j2gmap_link;
         // Jump2geoinfomap
-        document.getElementById(&#39;j2geoinfomap&#39;).onclick = j2geoinfomap_link;
+        document.getElementById('j2geoinfomap').onclick = j2geoinfomap_link;
         // Layer show hide bottom
-        document.getElementById(&#39;settingonoff&#39;).onclick = settingonoff_function;
+        document.getElementById('settingonoff').onclick = settingonoff_function;
         // Layer change lighting
-        document.getElementById(&#39;lightingonoff&#39;).onclick = lightingonoff_function;
+        document.getElementById('lightingonoff').onclick = lightingonoff_function;
 
         // Drawing Related
         const draw = new MapboxDraw({
@@ -64963,65 +64955,63 @@
         });
         map.addControl(draw);
 
-        map.on(&#39;draw.create&#39;, updateArea);
-        map.on(&#39;draw.delete&#39;, updateArea);
-        map.on(&#39;draw.update&#39;, updateArea);
+        map.on('draw.create', updateArea);
+        map.on('draw.delete', updateArea);
+        map.on('draw.update', updateArea);
 
         function updateArea(e) {
             const data = draw.getAll();
-            const answer = document.getElementById(&#39;calculated-area-distance&#39;);
-            if (data.features.length &gt; 0) {
+            const answer = document.getElementById('calculated-area-distance');
+            if (data.features.length > 0) {
                 const area = turf.area(data);
-                const distance = turf.length(data, { units: &#39;kilometers&#39; });
+                const distance = turf.length(data, { units: 'kilometers' });
                 // Restrict the area to 2 decimal points.
                 const rounded_area = Math.round(area * 100) / 100;
                 const distance_cal = distance * 1000;
-                answer.innerHTML = `&lt;p&gt;Distance: &lt;strong&gt;${distance_cal.toFixed(2)}&lt;/strong&gt; meters&lt;/p&gt; &lt;p&gt;Area: &lt;strong&gt;${rounded_area}&lt;/strong&gt; square meters&lt;/p&gt;`;
+                answer.innerHTML = `<p>Distance: <strong>${distance_cal.toFixed(2)}</strong> meters</p> <p>Area: <strong>${rounded_area}</strong> square meters</p>`;
             } else {
-                answer.innerHTML = &#39;&#39;;
-                if (e.type !== &#39;draw.delete&#39;)
-                    alert(&#39;Click the map to draw a polygon.&#39;);
+                answer.innerHTML = '';
+                if (e.type !== 'draw.delete')
+                    alert('Click the map to draw a polygon.');
             }
         }
 
         function geturlWFS(WFS_type, csdi_id, layer) {
-            return &#39;https://portal.csdi.gov.hk/server/services/&#39; +
+            return 'https://portal.csdi.gov.hk/server/services/' +
                 WFS_type +
-                &#39;/&#39; +
+                '/' +
                 csdi_id +
-                &#39;/MapServer/WFSServer?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typename=&#39; +
+                '/MapServer/WFSServer?service=wfs&version=2.0.0&request=GetFeature&typename=' +
                 layer +
-                &#39;&amp;outputFormat=GeoJSON&amp;srsname=EPSG:4326&amp;bbox=&#39; +
-                +map.getBounds().getSouthWest().lat + &#39;,&#39;
-                + map.getBounds().getSouthWest().lng + &#39;,&#39;
-                + map.getBounds().getNorthEast().lat + &#39;,&#39;
+                '&outputFormat=GeoJSON&srsname=EPSG:4326&bbox=' +
+                +map.getBounds().getSouthWest().lat + ','
+                + map.getBounds().getSouthWest().lng + ','
+                + map.getBounds().getNorthEast().lat + ','
                 + map.getBounds().getNorthEast().lng
         }
         function geturlWMS(WMS_type, csdi_id, layer) {
-            return &#39;https://portal.csdi.gov.hk/server/services/&#39; +
+            return 'https://portal.csdi.gov.hk/server/services/' +
                 WMS_type +
-                &#39;/&#39; +
+                '/' +
                 csdi_id +
-                &#39;/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&#39; +
-                &#39;&amp;FORMAT=image%2Fpng32&#39; +
-                &#39;&amp;TRANSPARENT=true&amp;&#39; +
-                &#39;LAYERS=&#39; +
+                '/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap' +
+                '&FORMAT=image%2Fpng32' +
+                '&TRANSPARENT=true&' +
+                'LAYERS=' +
                 layer +
-                &#39;&amp;WIDTH=&#39; +
-                document.getElementById(&quot;map&quot;).offsetWidth +
-                &#39;&amp;HEIGHT=&#39; +
-                document.getElementById(&quot;map&quot;).offsetHeight +
-                &#39;&amp;crs=EPSG%3A4326&amp;CRS=EPSG%3A4326&amp;&#39; +
-                &#39;STYLES=&#39; +
-                &#39;&amp;BBOX=&#39; +
-                +map.getBounds().getSouthWest().lat + &#39;,&#39;
-                + map.getBounds().getSouthWest().lng + &#39;,&#39;
-                + map.getBounds().getNorthEast().lat + &#39;,&#39;
+                '&WIDTH=' +
+                document.getElementById("map").offsetWidth +
+                '&HEIGHT=' +
+                document.getElementById("map").offsetHeight +
+                '&crs=EPSG%3A4326&CRS=EPSG%3A4326&' +
+                'STYLES=' +
+                '&BBOX=' +
+                +map.getBounds().getSouthWest().lat + ','
+                + map.getBounds().getSouthWest().lng + ','
+                + map.getBounds().getNorthEast().lat + ','
                 + map.getBounds().getNorthEast().lng
         }
 
-
-        // map.addControl(deckOverlay);
         // Add zoom and rotation controls to the map.
         map.addControl(new mapboxgl.NavigationControl());
 
@@ -65042,7 +65032,7 @@
             DPI: DPI[400],
             Crosshair: true,
             PrintableArea: true,
-        }), &#39;top-right&#39;);
+        }), 'top-right');
 
         map.addControl(
             new mapboxgl.GeolocateControl({
@@ -65065,111 +65055,108 @@
             zoom = Math.round(zoom) + 1;
             var lat = map.getCenter().lat;
             var lng = map.getCenter().lng;
-            // window.open(&#39;http://maps.google.com/?q=&#39;+lat+&#39;,&#39;+lng+&#39;&amp;z=&#39; + zoom)
-            window.open(&#39;https://www.google.com/maps/@?api=1&amp;map_action=map&amp;center=&#39; + lat + &#39;,&#39; + lng + &#39;&amp;zoom=&#39; + zoom + &#39;&amp;basemap=satellite&amp;layer=traffic&#39;)
+            window.open('https://www.google.com/maps/@?api=1&map_action=map&center=' + lat + ',' + lng + '&zoom=' + zoom + '&basemap=satellite&layer=traffic')
         }
         function j2geoinfomap_link() {
             var lat = map.getCenter().lat;
             var lng = map.getCenter().lng;
-            // window.open(&#39;http://maps.google.com/?q=&#39;+lat+&#39;,&#39;+lng+&#39;&amp;z=&#39; + zoom)
-            window.open(&#39;https://www.map.gov.hk/gm/map/s/identify/&#39; + lat + &#39;/&#39; + lng + &#39;?lg=en&#39;)
+            window.open('https://www.map.gov.hk/gm/map/s/identify/' + lat + '/' + lng + '?lg=en')
         }
         // setting show hide function
         function settingonoff_function() {
-            const items = [&#39;calculation-box_group&#39;, &#39;menu2&#39;, &#39;menu3&#39;,&#39;ribbon&#39;];
+            const items = ['calculation-box_group', 'menu2', 'menu3', 'ribbon'];
 
-            for (let i = 0; i &lt; items.length; i++) {
+            for (let i = 0; i < items.length; i++) {
                 var element = document.getElementById(items[i]);
-                var hidden = element.getAttribute(&quot;hidden&quot;);
+                var hidden = element.getAttribute("hidden");
                 if (hidden) {
-                    element.removeAttribute(&quot;hidden&quot;);
-                    document.getElementById(&#39;settingonoff&#39;).textContent = &quot;Show Setting&quot;;
+                    element.removeAttribute("hidden");
+                    document.getElementById('settingonoff').textContent = "Show Setting";
                 } else {
-                    element.setAttribute(&quot;hidden&quot;, &quot;hidden&quot;);
-                    document.getElementById(&#39;settingonoff&#39;).textContent = &quot;Hide Setting&quot;;
+                    element.setAttribute("hidden", "hidden");
+                    document.getElementById('settingonoff').textContent = "Hide Setting";
                 }
             }
         }
         function lightingonoff_function() {
-            const element = document.getElementById(&#39;lightingonoff&#39;);
-            if (element.textContent === &#39;Intensed Lighting&#39;) {
-                element.textContent = &#39;Normal Lighting&#39;;
+            const element = document.getElementById('lightingonoff');
+            if (element.textContent === 'Intensed Lighting') {
+                element.textContent = 'Normal Lighting';
                 map.setLights([
                     {
-                        &quot;id&quot;: &quot;directional&quot;,
-                        &quot;type&quot;: &quot;directional&quot;,
-                        &quot;properties&quot;: {
-                            &quot;cast-shadows&quot;: true,
-                            &quot;direction&quot;: [110, 20],
-                            &quot;color&quot;: &quot;hsl(0, 0%, 100%)&quot;,
-                            &quot;intensity&quot;: [&quot;step&quot;, [&quot;zoom&quot;], 0, 15, 0]
+                        "id": "directional",
+                        "type": "directional",
+                        "properties": {
+                            "cast-shadows": true,
+                            "direction": [110, 20],
+                            "color": "hsl(0, 0%, 100%)",
+                            "intensity": ["step", ["zoom"], 0, 15, 0]
                         }
                     },
                     {
-                        &quot;id&quot;: &quot;ambient&quot;, &quot;type&quot;: &quot;ambient&quot;, &quot;properties&quot;: { &quot;intensity&quot;: 1 }
+                        "id": "ambient", "type": "ambient", "properties": { "intensity": 1 }
                     }]);
             } else {
-                element.textContent = &#39;Intensed Lighting&#39;;
+                element.textContent = 'Intensed Lighting';
                 map.setLights([
                     {
-                        &quot;id&quot;: &quot;directional&quot;,
-                        &quot;type&quot;: &quot;directional&quot;,
-                        &quot;properties&quot;: {
-                            &quot;cast-shadows&quot;: true,
-                            &quot;direction&quot;: [110, 20],
-                            &quot;color&quot;: &quot;hsl(0, 0%, 100%)&quot;,
-                            &quot;intensity&quot;: [&quot;step&quot;, [&quot;zoom&quot;], 0, 15, 1]
+                        "id": "directional",
+                        "type": "directional",
+                        "properties": {
+                            "cast-shadows": true,
+                            "direction": [110, 20],
+                            "color": "hsl(0, 0%, 100%)",
+                            "intensity": ["step", ["zoom"], 0, 15, 1]
                         }
                     },
                     {
-                        &quot;id&quot;: &quot;ambient&quot;, &quot;type&quot;: &quot;ambient&quot;, &quot;properties&quot;: { &quot;intensity&quot;: 1 }
+                        "id": "ambient", "type": "ambient", "properties": { "intensity": 1 }
                     }]);
             }
         };
 
-        map.on(&#39;render&#39;, () =&gt; {
-            const element = document.getElementById(&quot;condition_box&quot;);
-            element.textContent = &quot;LOADING...&quot;;
+        map.on('render', () => {
+            const element = document.getElementById("condition_box");
+            element.textContent = "LOADING...";
         });
-        map.on(&#39;idle&#39;, () =&gt; {
-            const element = document.getElementById(&quot;condition_box&quot;);
-            element.textContent = &quot;COMPLETE&quot;;
+        map.on('idle', () => {
+            const element = document.getElementById("condition_box");
+            element.textContent = "COMPLETE";
         });
-        map.on(&#39;error&#39;, (e) =&gt; {
-            const element = document.getElementById(&quot;condition_box&quot;);
+        map.on('error', (e) => {
+            const element = document.getElementById("condition_box");
             console.log(e);
-            element.textContent = &quot;ERROR&quot;;
-            element.style.backgroundColor = &quot;red&quot;;
+            element.textContent = "ERROR";
+            element.style.backgroundColor = "red";
         });
-        map.on(&#39;load&#39;, () =&gt; {
+        map.on('load', () => {
             map.setLights([
                 {
-                    &quot;id&quot;: &quot;directional&quot;,
-                    &quot;type&quot;: &quot;directional&quot;,
-                    &quot;properties&quot;: {
-                        &quot;cast-shadows&quot;: true,
-                        &quot;direction&quot;: [110, 20],
-                        &quot;color&quot;: &quot;hsl(0, 0%, 100%)&quot;,
-                        &quot;intensity&quot;: [&quot;step&quot;, [&quot;zoom&quot;], 0, 15, 1]
+                    "id": "directional",
+                    "type": "directional",
+                    "properties": {
+                        "cast-shadows": true,
+                        "direction": [110, 20],
+                        "color": "hsl(0, 0%, 100%)",
+                        "intensity": ["step", ["zoom"], 0, 15, 1]
                     }
                 },
                 {
-                    &quot;id&quot;: &quot;ambient&quot;, &quot;type&quot;: &quot;ambient&quot;, &quot;properties&quot;: { &quot;intensity&quot;: 1 }
+                    "id": "ambient", "type": "ambient", "properties": { "intensity": 1 }
                 }]);
         });
         // toggleLayer
         function toggleLayer(ids, name, status) {
-            var link = document.createElement(&#39;layerswitch&#39;);
-            link.href = &#39;#&#39;;
-            // link.className = &#39;active&#39;;
+            var link = document.createElement('layerswitch');
+            link.href = '#';
             link.textContent = name;
             for (layers in ids) {
-                if (status === &#39;off&#39;) {
-                    map.setLayoutProperty(ids[layers], &#39;visibility&#39;, &#39;none&#39;);
-                    link.className = &#39;&#39;;
+                if (status === 'off') {
+                    map.setLayoutProperty(ids[layers], 'visibility', 'none');
+                    link.className = '';
                 } else {
-                    link.className = &#39;active&#39;;
-                    map.setLayoutProperty(ids[layers], &#39;visibility&#39;, &#39;visible&#39;);
+                    link.className = 'active';
+                    map.setLayoutProperty(ids[layers], 'visibility', 'visible');
                 }
             }
 
@@ -65178,149 +65165,155 @@
                 e.stopPropagation();
                 for (layers in ids) {
 
-                    var visibility = map.getLayoutProperty(ids[layers], &#39;visibility&#39;);
-                    if (visibility === &#39;visible&#39;) {
-                        map.setLayoutProperty(ids[layers], &#39;visibility&#39;, &#39;none&#39;);
-                        status = &#39;off&#39;;
-                        this.className = &#39;&#39;;
+                    var visibility = map.getLayoutProperty(ids[layers], 'visibility');
+                    if (visibility === 'visible') {
+                        map.setLayoutProperty(ids[layers], 'visibility', 'none');
+                        status = 'off';
+                        this.className = '';
                     } else {
-                        this.className = &#39;active&#39;;
-                        map.setLayoutProperty(ids[layers], &#39;visibility&#39;, &#39;visible&#39;);
-                        status = &#39;on&#39;;
+                        this.className = 'active';
+                        map.setLayoutProperty(ids[layers], 'visibility', 'visible');
+                        status = 'on';
                     }
                 }
             };
 
-            var layers = document.getElementById(&#39;menu2&#39;);
+            var layers = document.getElementById('menu2');
             layers.appendChild(link);
         }
 
         function WFSLayer(ids, status, WFS_type, csdi_id, layer, type, text) {
-            if (type === &#39;line&#39;) {
-                if (status === &#39;on&#39;) {
+            if (type === 'line') {
+                if (status === 'on') {
                     map.addSource(ids, {
-                        type: &#39;geojson&#39;,
+                        type: 'geojson',
                         data: geturlWFS(WFS_type, csdi_id, layer)
                     });
                     map.addLayer({
-                        &#39;id&#39;: ids + &#39;_L&#39;,
-                        &#39;type&#39;: &#39;line&#39;,
-                        &#39;source&#39;: ids,
-                        &#39;paint&#39;: {
-                            &#39;line-color&#39;: &#39;yellow&#39;,
-                            &#39;line-opacity&#39;: 0.75,
-                            &#39;line-width&#39;: 5
+                        'id': ids + '_L',
+                        'type': 'line',
+                        'source': ids,
+                        'paint': {
+                            'line-color': 'yellow',
+                            'line-opacity': 0.75,
+                            'line-width': 5
                         }
                     });
                     map.addLayer({
-                        &#39;id&#39;: ids + &#39;_T&#39;,
-                        &#39;type&#39;: &#39;symbol&#39;,
-                        &#39;source&#39;: ids,
-                        &quot;layout&quot;: {
-                            &quot;text-field&quot;: [&quot;to-string&quot;, [&quot;get&quot;, text]],
-                            &quot;text-size&quot;: [
-                                &quot;interpolate&quot;,
-                                [&quot;linear&quot;],
-                                [&quot;zoom&quot;],
+                        'id': ids + '_T',
+                        'type': 'symbol',
+                        'source': ids,
+                        "layout": {
+                            "text-field": ["to-string", ["get", text]],
+                            "text-size": [
+                                "interpolate",
+                                ["linear"],
+                                ["zoom"],
                                 15,
                                 5,
                                 22,
                                 15
                             ],
-                            &quot;text-ignore-placement&quot;: true,
-                            &quot;text-allow-overlap&quot;: true
+                            "text-ignore-placement": true,
+                            "text-allow-overlap": true
                         },
-                        &quot;paint&quot;: {
-                            &quot;text-color&quot;: &quot;hsl(0, 0%, 100%)&quot;,
-                            &quot;text-halo-color&quot;: &quot;hsla(0, 0%, 0%, 0.9)&quot;,
-                            &quot;text-halo-width&quot;: 3,
-                            &quot;text-halo-blur&quot;: 2
+                        "paint": {
+                            "text-color": "hsl(0, 0%, 100%)",
+                            "text-halo-color": "hsla(0, 0%, 0%, 0.9)",
+                            "text-halo-width": 3,
+                            "text-halo-blur": 2
                         }
                     });
-                    map.on(&#39;moveend&#39;, () =&gt; {
+                    map.on('moveend', () => {
                         if (map.getSource(ids)) {
                             map.getSource(ids).setData(geturlWFS(WFS_type, csdi_id, layer));
                         }
                     });
 
                 } else {
-                    map.removeLayer(ids + &#39;_L&#39;);
-                    map.removeLayer(ids + &#39;_T&#39;);
+                    map.removeLayer(ids + '_L');
+                    map.removeLayer(ids + '_T');
                     map.removeSource(ids);
                 }
             }
-            if (type === &#39;circle&#39;) {
-                if (status === &#39;on&#39;) {
+            if (type === 'circle') {
+                if (status === 'on') {
                     map.addSource(ids, {
-                        type: &#39;geojson&#39;,
+                        type: 'geojson',
                         data: geturlWFS(WFS_type, csdi_id, layer)
                     });
                     map.addLayer({
-                        &#39;id&#39;: ids + &#39;_C&#39;,
-                        &#39;type&#39;: &#39;circle&#39;,
-                        &#39;source&#39;: ids,
-                        &#39;paint&#39;: {
-                            &#39;circle-color&#39;: &#39;yellow&#39;,
-                            &#39;circle-opacity&#39;: 0.75,
-                            &#39;circle-radius&#39;: 5
+                        'id': ids + '_C',
+                        'type': 'circle',
+                        'source': ids,
+                        'paint': {
+                            'circle-color': 'yellow',
+                            'circle-opacity': 0.75,
+                            'circle-radius': 5
                         }
                     });
                     map.addLayer({
-                        &#39;id&#39;: ids + &#39;_T&#39;,
-                        &#39;type&#39;: &#39;symbol&#39;,
-                        &#39;source&#39;: ids,
-                        &quot;layout&quot;: {
-                            &quot;text-field&quot;: [&quot;to-string&quot;, [&quot;get&quot;, text]],
-                            &quot;text-size&quot;: [
-                                &quot;interpolate&quot;,
-                                [&quot;linear&quot;],
-                                [&quot;zoom&quot;],
+                        'id': ids + '_T',
+                        'type': 'symbol',
+                        'source': ids,
+                        "layout": {
+                            "text-field": ["to-string", ["get", text]],
+                            "text-size": [
+                                "interpolate",
+                                ["linear"],
+                                ["zoom"],
                                 15,
                                 5,
                                 22,
                                 15
                             ],
-                            &quot;text-anchor&quot;: &#39;bottom-right&#39;,
-                            &quot;text-ignore-placement&quot;: true,
-                            &quot;text-allow-overlap&quot;: true,
+                            "text-anchor": 'bottom-right',
+                            "text-ignore-placement": true,
+                            "text-allow-overlap": true,
 
                         },
-                        &quot;paint&quot;: {
-                            &quot;text-color&quot;: &quot;hsl(0, 0%, 100%)&quot;,
-                            &quot;text-halo-color&quot;: &quot;hsla(0, 0%, 0%, 0.9)&quot;,
-                            &quot;text-halo-width&quot;: 3,
-                            &quot;text-halo-blur&quot;: 2
+                        "paint": {
+                            "text-color": "hsl(0, 0%, 100%)",
+                            "text-halo-color": "hsla(0, 0%, 0%, 0.9)",
+                            "text-halo-width": 3,
+                            "text-halo-blur": 2
                         }
                     });
-                    map.on(&#39;moveend&#39;, () =&gt; {
+                    map.on('moveend', () => {
                         if (map.getSource(ids)) {
                             map.getSource(ids).setData(geturlWFS(WFS_type, csdi_id, layer));
                         }
                     });
                 } else {
-                    map.removeLayer(ids + &#39;_C&#39;);
-                    map.removeLayer(ids + &#39;_T&#39;);
+                    map.removeLayer(ids + '_C');
+                    map.removeLayer(ids + '_T');
                     map.removeSource(ids);
                 }
             }
         }
 
-        function toggleWFSLayer(ids, name, menu, WFS_type, csdi_id, layer, type, text) {
-            var link = document.createElement(&#39;layerswitch3&#39;);
-            link.href = &#39;#&#39;;
-            link.className = &#39;&#39;;
+        function toggleWFSLayer(init_status,ids, name, menu, WFS_type, csdi_id, layer, type, text) {
+            var link = document.createElement('layerswitch3');
+            link.href = '#';
             link.textContent = name;
+
+            if (init_status === 'on') {
+                    link.className = 'active';
+                    WFSLayer(ids, 'on', WFS_type, csdi_id, layer, type, text);
+                }else{
+                    link.className = '';
+                }
 
             link.onclick = function (e) {
                 e.preventDefault();
                 e.stopPropagation();
 
-                if (this.className === &#39;&#39;) {
-                    WFSLayer(ids, &#39;on&#39;, WFS_type, csdi_id, layer, type, text);
-                    this.className = &#39;active&#39;;
+                if (this.className === '') {
+                    WFSLayer(ids, 'on', WFS_type, csdi_id, layer, type, text);
+                    this.className = 'active';
                 } else {
-                    WFSLayer(ids, &#39;off&#39;, WFS_type, csdi_id, layer, type, text);
-                    this.className = &#39;&#39;;
+                    WFSLayer(ids, 'off', WFS_type, csdi_id, layer, type, text);
+                    this.className = '';
                 }
 
             };
@@ -65330,14 +65323,14 @@
         }
 
         function WMSmoveend_event(ids, status, WMS_type, csdi_id, layer, type, text) {
-            if (status === &#39;on&#39;) {
-                map.removeLayer(ids + &#39;_GIF&#39;);
+            if (status === 'on') {
+                map.removeLayer(ids + '_GIF');
                 map.removeSource(ids);
 
                 map.addSource(ids, {
-                    &#39;type&#39;: &#39;image&#39;,
-                    &#39;url&#39;: geturlWMS(WMS_type, csdi_id, layer),
-                    &#39;coordinates&#39;: [
+                    'type': 'image',
+                    'url': geturlWMS(WMS_type, csdi_id, layer),
+                    'coordinates': [
                         [map.getBounds().getNorthWest().lng, map.getBounds().getNorthWest().lat],
                         [map.getBounds().getNorthEast().lng, map.getBounds().getNorthEast().lat],
                         [map.getBounds().getSouthEast().lng, map.getBounds().getSouthEast().lat],
@@ -65345,24 +65338,24 @@
                     ]
                 });
                 map.addLayer({
-                    id: ids + &#39;_GIF&#39;,
-                    &#39;type&#39;: &#39;raster&#39;,
-                    &#39;source&#39;: ids,
-                    &#39;paint&#39;: {
-                        &#39;raster-saturation&#39;: 1,
-                        &#39;raster-color&#39;: &#39;rgb(0, 0, 0)&#39;,
-                        &#39;raster-color-range&#39;: [0, 0],
+                    id: ids + '_GIF',
+                    'type': 'raster',
+                    'source': ids,
+                    'paint': {
+                        'raster-saturation': 1,
+                        'raster-color': 'rgb(0, 0, 0)',
+                        'raster-color-range': [0, 0],
                     },
                 });
             }
         }
 
         function WMSLayer(ids, status, WMS_type, csdi_id, layer, type, text) {
-            if (status === &#39;on&#39;) {
+            if (status === 'on') {
                 map.addSource(ids, {
-                    &#39;type&#39;: &#39;image&#39;,
-                    &#39;url&#39;: geturlWMS(WMS_type, csdi_id, layer),
-                    &#39;coordinates&#39;: [
+                    'type': 'image',
+                    'url': geturlWMS(WMS_type, csdi_id, layer),
+                    'coordinates': [
                         [map.getBounds().getNorthWest().lng, map.getBounds().getNorthWest().lat],
                         [map.getBounds().getNorthEast().lng, map.getBounds().getNorthEast().lat],
                         [map.getBounds().getSouthEast().lng, map.getBounds().getSouthEast().lat],
@@ -65370,23 +65363,23 @@
                     ]
                 });
                 map.addLayer({
-                    &#39;id&#39;: ids + &#39;_GIF&#39;,
-                    &#39;type&#39;: &#39;raster&#39;,
-                    &#39;source&#39;: ids,
-                    &#39;paint&#39;: {
-                        &#39;raster-saturation&#39;: 1,
-                        &#39;raster-color&#39;: &#39;rgb(0, 0, 0)&#39;,
-                        &#39;raster-color-range&#39;: [0, 0],
+                    'id': ids + '_GIF',
+                    'type': 'raster',
+                    'source': ids,
+                    'paint': {
+                        'raster-saturation': 1,
+                        'raster-color': 'rgb(0, 0, 0)',
+                        'raster-color-range': [0, 0],
                     },
                 });
-                map.on(&#39;moveend&#39;, () =&gt; {
+                map.on('moveend', () => {
                     if (map.getSource(ids)) {
-                        map.once(&#39;moveend&#39;, WMSmoveend_event(ids, status, WMS_type, csdi_id, layer, type, text));
+                        map.once('moveend', WMSmoveend_event(ids, status, WMS_type, csdi_id, layer, type, text));
                     }
                 });
 
             } else {
-                map.removeLayer(ids + &#39;_GIF&#39;);
+                map.removeLayer(ids + '_GIF');
                 map.removeSource(ids);
             }
 
@@ -65394,22 +65387,27 @@
 
 
 
-        function toggleWMSLayer(ids, name, menu, WMS_type, csdi_id, layer) {
-            var link = document.createElement(&#39;layerswitch3&#39;);
-            link.href = &#39;#&#39;;
-            link.className = &#39;&#39;;
+        function toggleWMSLayer(init_status,ids, name, menu, WMS_type, csdi_id, layer) {
+            var link = document.createElement('layerswitch3');
+            link.href = '#';
             link.textContent = name;
 
+            if (init_status === 'on') {
+                    link.className = 'active';
+                    WMSLayer(ids, 'on', WMS_type, csdi_id, layer);
+            }else{
+                link.className = '';
+            };
             link.onclick = function (e) {
                 e.preventDefault();
                 e.stopPropagation();
 
-                if (this.className === &#39;&#39;) {
-                    WMSLayer(ids, &#39;on&#39;, WMS_type, csdi_id, layer);
-                    this.className = &#39;active&#39;;
+                if (this.className === '') {
+                    WMSLayer(ids, 'on', WMS_type, csdi_id, layer);
+                    this.className = 'active';
                 } else {
-                    WMSLayer(ids, &#39;off&#39;, WMS_type, csdi_id, layer);
-                    this.className = &#39;&#39;;
+                    WMSLayer(ids, 'off', WMS_type, csdi_id, layer);
+                    this.className = '';
                 }
 
             };
@@ -65420,67 +65418,66 @@
 
         function LayerOptions(status_mb, status_csdi) {
             // Set up the corresponding toggle button for each layer.
-            if (status_mb === &#39;on&#39;) {
-                toggleLayer([&#39;polygon_iB5000_RoadPoly_AS&#39;, &#39;polygon_iB5000_RoadPoly_FLY&#39;, &#39;polygon_iB5000_RoadPoly_OG&#39;, &#39;polygon_iB5000_RoadPoly_ROB&#39;, &#39;polygon_iB5000_RoadPoly_UG&#39;], &#39;TRA_RoadColor&#39;, &#39;on&#39;);
-                toggleLayer([&#39;polygon_iB5000_PedNBikePoly_AS&#39;, &#39;polygon_iB5000_PedNBikePoly_OG&#39;, &#39;polygon_iB5000_PedNBikePoly_UG&#39;], &#39;TRA_PedNBikeColor&#39;, &#39;on&#39;);
-                toggleLayer([&#39;Mapbox_rail_poly_Z17&#39;, &#39;Line_iB5000_RailLine&#39;, &#39;Mapbox_rail_poly_Z15&#39;, &#39;Mapbox_rail_line&#39;, &#39;Point_iB1000_RailwayEntrance&#39;], &#39;TRA_RailStnColor&#39;, &#39;on&#39;);
-                toggleLayer([&#39;Point_RD_MARK_SYM_PT_T&#39;, &#39;Line_TRAAIDS_DTAD_RD_MARK_LINE_C_T&#39;, &#39;TRAAIDS_DTAD_RAILING_LINE_T&#39;, &#39;Line_TRA_General_T&#39;], &#39;TRA_RefText&#39;, &#39;off&#39;);
-                toggleLayer([&#39;Line_iB1000_BuildingLine&#39;, &#39;Line_iB1000_BuildingAccessoryLine&#39;], &#39;Basemap_BuildingsLine&#39;, &#39;on&#39;);
-                toggleLayer([&#39;Polygon_Building_B&#39;, &#39;Polygon_Building_P&#39;], &#39;Basemap_BuildingColor&#39;, &#39;on&#39;);
-                toggleLayer([&#39;Polygon_Building_B_3D&#39;, &#39;Polygon_Building_P_3D&#39;], &#39;Basemap_Buildings3D&#39;, &#39;off&#39;);
-                toggleLayer([&#39;polygon_iB1000_TransportPolygon&#39;, &#39;polygon_iB1000_RailwayPolygon&#39;, &#39;polygon_iB5000_RailPoly_OG&#39;, &#39;polygon_iB1000_BuiltStructurePolygon&#39;, &#39;polygon_iB1000_UtilityPolygon&#39;, &#39;polygon_iB1000_Berm&#39;,
-                    &#39;polygon_iB1000_BMSslope&#39;, &#39;polygon_iB1000_HydroPolygon&#39;, &#39;polygon_iB1000_VerticalCutPolygon&#39;, &#39;polygon_iB5000_BoulderPoly&#39;, &#39;polygon_iB5000_LandCoverPoly&#39;, &#39;polygon_iB5000_ContourPoly&#39;], &#39;Basemap_Color&#39;, &#39;on&#39;);
-                toggleLayer([&#39;polygon_iB5000_PedNBikePoly_AS_T&#39;, &#39;polygon_iB5000_RoadPoly_AS_T&#39;, &#39;polygon_iB5000_RoadPoly_FLY_T&#39;, &#39;polygon_iB5000_PedNBikePoly_OG_T&#39;,
-                    &#39;polygon_iB5000_RoadPoly_OG_T&#39;, &#39;polygon_iB5000_RoadPoly_ROB_T&#39;, &#39;polygon_iB5000_PedNBikePoly_UG_T&#39;, &#39;polygon_iB5000_RoadPoly_UG_T&#39;, &#39;polygon_iB1000_TransportPolygon_T&#39;,
-                    &#39;polygon_iB1000_BuiltStructurePolygon_T&#39;, &#39;polygon_iB1000_UtilityPolygon_T&#39;, &#39;polygon_iB1000_Berm_T&#39;, &#39;polygon_iB1000_BMSslope_T&#39;, &#39;polygon_iB1000_HydroPolygon_T&#39;,
-                    &#39;polygon_iB1000_VerticalCutPolygon_T&#39;, &#39;polygon_iB5000_BoulderPoly_T&#39;, &#39;polygon_iB5000_LandCoverPoly_T&#39;], &#39;Basemap_RefText&#39;, &#39;off&#39;);
-                toggleLayer([&#39;background_white&#39;], &#39;White_Background&#39;, &#39;on&#39;);
+            if (status_mb === 'on') {
+                toggleLayer(['polygon_iB5000_RoadPoly_AS', 'polygon_iB5000_RoadPoly_FLY', 'polygon_iB5000_RoadPoly_OG', 'polygon_iB5000_RoadPoly_ROB', 'polygon_iB5000_RoadPoly_UG'], 'TRA_RoadColor', 'on');
+                toggleLayer(['polygon_iB5000_PedNBikePoly_AS', 'polygon_iB5000_PedNBikePoly_OG', 'polygon_iB5000_PedNBikePoly_UG'], 'TRA_PedNBikeColor', 'on');
+                toggleLayer(['Mapbox_rail_poly_Z17', 'Line_iB5000_RailLine', 'Mapbox_rail_poly_Z15', 'Mapbox_rail_line', 'Point_iB1000_RailwayEntrance'], 'TRA_RailStnColor','Point_iB1000_RailwayEntrance', 'on');
+                toggleLayer(['Point_RD_MARK_SYM_PT_T', 'Line_TRAAIDS_DTAD_RD_MARK_LINE_C_T', 'TRAAIDS_DTAD_RAILING_LINE_T', 'Line_TRA_General_T'], 'TRA_RefText', 'off');
+                toggleLayer(['Line_iB1000_BuildingLine', 'Line_iB1000_BuildingAccessoryLine'], 'Basemap_BuildingsLine', 'on');
+                toggleLayer(['Polygon_Building_B', 'Polygon_Building_P'], 'Basemap_BuildingColor', 'on');
+                toggleLayer(['Polygon_Building_B_3D', 'Polygon_Building_P_3D'], 'Basemap_Buildings3D', 'off');
+                toggleLayer(['polygon_iB1000_TransportPolygon', 'polygon_iB1000_RailwayPolygon', 'polygon_iB5000_RailPoly_OG', 'polygon_iB1000_BuiltStructurePolygon', 'polygon_iB1000_UtilityPolygon', 'polygon_iB1000_Berm',
+                    'polygon_iB1000_BMSslope', 'polygon_iB1000_HydroPolygon', 'polygon_iB1000_VerticalCutPolygon', 'polygon_iB5000_BoulderPoly', 'polygon_iB5000_LandCoverPoly', 'polygon_iB5000_ContourPoly'], 'Basemap_Color', 'on');
+                toggleLayer(['polygon_iB5000_PedNBikePoly_AS_T', 'polygon_iB5000_RoadPoly_AS_T', 'polygon_iB5000_RoadPoly_FLY_T', 'polygon_iB5000_PedNBikePoly_OG_T',
+                    'polygon_iB5000_RoadPoly_OG_T', 'polygon_iB5000_RoadPoly_ROB_T', 'polygon_iB5000_PedNBikePoly_UG_T', 'polygon_iB5000_RoadPoly_UG_T', 'polygon_iB1000_TransportPolygon_T',
+                    'polygon_iB1000_BuiltStructurePolygon_T', 'polygon_iB1000_UtilityPolygon_T', 'polygon_iB1000_Berm_T', 'polygon_iB1000_BMSslope_T', 'polygon_iB1000_HydroPolygon_T',
+                    'polygon_iB1000_VerticalCutPolygon_T', 'polygon_iB5000_BoulderPoly_T', 'polygon_iB5000_LandCoverPoly_T'], 'Basemap_RefText', 'off');
+                toggleLayer(['background_white'], 'White_Background', 'on');
             }
-            if (status_csdi === &#39;on&#39;) {
-                toggleWMSLayer(&#39;TD_RdSign&#39;, &#39;TD RdSign(TSDSPS)&#39;, &#39;menu3&#39;, &#39;common&#39;, &#39;td_rcd_1638928986276_39755&#39;, &#39;16,17,32,33,37,38,39&#39;);
-                toggleWMSLayer(&#39;TD_Rd&amp;SignAnno&#39;, &#39;TD Rd &amp; Sign Anno&#39;, &#39;menu3&#39;, &#39;common&#39;, &#39;td_rcd_1638928986276_39755&#39;, &#39;53,55,57,59&#39;);
-                toggleWFSLayer(&#39;HyD_Footbridge&#39;, &#39;HyD Footbridge&#39;, &#39;menu3&#39;, &#39;common&#39;, &#39;hyd_rcd_1632360512481_74705&#39;, &#39;STR_FB&#39;, &#39;line&#39;, &quot;Structure_number_of_footbridge&quot;);
-                toggleWFSLayer(&#39;HyD_Coverwky&#39;, &#39;HyD Cover Walkway&#39;, &#39;menu3&#39;, &#39;common&#39;, &#39;hyd_rcd_1632360364210_72608&#39;, &#39;STR_WALKWAY&#39;, &#39;line&#39;, &quot;Structure_number_of_cover_to_walkway&quot;);
-                toggleWFSLayer(&#39;HyD_Subway&#39;, &#39;HyD Subway&#39;, &#39;menu3&#39;, &#39;common&#39;, &#39;hyd_rcd_1632360845029_59241&#39;, &#39;STR_SUBWAY&#39;, &#39;line&#39;, &quot;Structure_number_of_subway&quot;);
-                toggleWFSLayer(&#39;HyD_Bridge&#39;, &#39;HyD Bridge&#39;, &#39;menu3&#39;, &#39;common&#39;, &#39;hyd_rcd_1632360050986_38630&#39;, &#39;STR_STRUCT&#39;, &#39;line&#39;, &quot;Structure_number_of_bridge&quot;);
-                toggleWFSLayer(&#39;HyD_UP&#39;, &#39;HyD Underpass&#39;, &#39;menu3&#39;, &#39;common&#39;, &#39;hyd_rcd_1632360923030_42011&#39;, &#39;STR_UP&#39;, &#39;line&#39;, &quot;Structure_number_of_underpass&quot;);
-                toggleWFSLayer(&#39;Lamp_Post&#39;, &#39;Lamp Post&#39;, &#39;menu3&#39;, &#39;common&#39;, &#39;hyd_rcd_1629267205229_84645&#39;, &#39;Lamppost&#39;, &#39;circle&#39;, &quot;Lamp_Post_Number&quot;);
-                toggleWFSLayer(&#39;Lot_LandsD&#39;, &#39;Lot (LandsD)&#39;, &#39;menu3&#39;, &#39;open&#39;, &#39;landsd_rcd_1637217253134_22729&#39;, &#39;LOT&#39;, &#39;line&#39;, &quot;LOTCSUID&quot;);
-                toggleWFSLayer(&#39;Slope_Main&#39;, &#39;Slope Maintenance Responsibility Boundary&#39;, &#39;menu3&#39;, &#39;open&#39;, &#39;landsd_rcd_1637220975523_8411&#39;, &#39;SMR_BDY_POLY&#39;, &#39;line&#39;, &quot;SLOPE_NO&quot;);
+            if (status_csdi === 'on') {
+                toggleWMSLayer('on','TD_RdSign', 'TD RdSign(TSDSPS)', 'menu3', 'common', 'td_rcd_1638928986276_39755', '16,17,32,33,37,38,39');
+                toggleWMSLayer('on','TD_Rd&SignAnno', 'TD Rd & Sign Anno', 'menu3', 'common', 'td_rcd_1638928986276_39755', '53,55,57,59');
+                toggleWFSLayer('off','HyD_Footbridge', 'HyD Footbridge', 'menu3', 'common', 'hyd_rcd_1632360512481_74705', 'STR_FB', 'line', "Structure_number_of_footbridge");
+                toggleWFSLayer('off','HyD_Coverwky', 'HyD Cover Walkway', 'menu3', 'common', 'hyd_rcd_1632360364210_72608', 'STR_WALKWAY', 'line', "Structure_number_of_cover_to_walkway");
+                toggleWFSLayer('off','HyD_Subway', 'HyD Subway', 'menu3', 'common', 'hyd_rcd_1632360845029_59241', 'STR_SUBWAY', 'line', "Structure_number_of_subway");
+                toggleWFSLayer('off','HyD_Bridge', 'HyD Bridge', 'menu3', 'common', 'hyd_rcd_1632360050986_38630', 'STR_STRUCT', 'line', "Structure_number_of_bridge");
+                toggleWFSLayer('off','HyD_UP', 'HyD Underpass', 'menu3', 'common', 'hyd_rcd_1632360923030_42011', 'STR_UP', 'line', "Structure_number_of_underpass");
+                toggleWFSLayer('off','Lamp_Post', 'Lamp Post', 'menu3', 'common', 'hyd_rcd_1629267205229_84645', 'Lamppost', 'circle', "Lamp_Post_Number");
+                toggleWFSLayer('off','Lot_LandsD', 'Lot (LandsD)', 'menu3', 'open', 'landsd_rcd_1637217253134_22729', 'LOT', 'line', "LOTCSUID");
+                toggleWFSLayer('off','Slope_Main', 'Slope Maintenance Responsibility Boundary', 'menu3', 'open', 'landsd_rcd_1637220975523_8411', 'SMR_BDY_POLY', 'line', "SLOPE_NO");
             }
 
         }
 
         // Add layer on off buttom
-        map.on(&#39;load&#39;, function () {
-            LayerOptions(&#39;on&#39;, &#39;on&#39;);
+        map.on('load', function () {
+            LayerOptions('on', 'on');
         });
 
         $(document).ready(function () {
-            $(&#39;.googlemap2mb&#39;).keydown(function (event) {
-                // enter has keyCode = 13, change it if you want to use another button
+            $('.googlemap2mb').keydown(function (event) {
+                // enter keyCode = 13,
                 if (event.keyCode == 13) {
-                    var input = document.getElementById(&quot;gmap2mb_input&quot;).value;
-                    const splitbyat = input.split(&quot;@&quot;);
-                    const splitbycomma = splitbyat[1].split(&quot;,&quot;);
+                    var input = document.getElementById("gmap2mb_input").value;
+                    const splitbyat = input.split("@");
+                    const splitbycomma = splitbyat[1].split(",");
                     lat = splitbycomma[0];
                     lng = splitbycomma[1];
-                    const splitbyz = splitbycomma[2].split(&quot;z&quot;);
+                    const splitbyz = splitbycomma[2].split("z");
                     zoom = splitbyz[0];
-                    if ((isNaN(zoom)) || (zoom &gt;= 22)) {
+                    if ((isNaN(zoom)) || (zoom >= 22)) {
                         zoom = 19;
                     }
-                    map.jumpTo({ &#39;center&#39;: [lng, lat], &#39;zoom&#39;: zoom - 1 });
+                    map.jumpTo({ 'center': [lng, lat], 'zoom': zoom - 1 });
                     return false;
-                    // https://www.google.com/maps/@ 22.3854874,114.1876802,19.83z?entry=ttu
                 }
             });
         });
-        
-    &lt;/script&gt;
-&lt;/body&gt;
 
-&lt;/html&gt;" jsaction="rcuQ6b:rcuQ6b;"><iframe class="pxjVId"></iframe></div>
+    </script>
+</body>
+
+</html>" jsaction="rcuQ6b:rcuQ6b;"><iframe class="pxjVId"></iframe></div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
